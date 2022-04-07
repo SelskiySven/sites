@@ -1,0 +1,41 @@
+.mn{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cl{
+    min-width: 425px;
+    min-height: 425px;
+    background: linear-gradient(0deg,red,blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: anim 1s linear infinite;
+}
+#circle{
+    background-color: white;
+    border-radius: 100%;
+    min-width: 230px;
+    min-height: 230px;
+    position: absolute;
+}
+
+@keyframes anim {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
