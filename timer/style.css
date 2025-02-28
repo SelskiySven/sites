@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+#apple{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    top:0;
+}
+
+#buttons>button{
+    font-family: "Roboto", serif;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    font-size: min(5vw,5vh);
+    margin: 0 0.5%;
+    min-width: 32%;
+    max-width: 32%;
+}
+
+#buttons{
+    display: flex;
+    flex-wrap: nowrap;
+    width: min(60vh,60vw);
+}
+
+#buttons>button:hover{
+    border-color: rgb(61, 61, 61);
+}
+
+#start{
+    background-color: green;
+}
+
+#stop{
+    background-color: red;
+}
+
+#pause{
+    background: rgb(202, 205, 50);
+}
+
+#timer{
+    font-family: "Orbitron", monospace;
+    color: white;
+    font-size: min(7vw,7vh);
+    font-weight: bold;
+    text-align: left;
+    margin: 0.5%;
+}
+
+
+#timer:hover{
+    color:yellow;
+    cursor:default;
+}
+
+.timer-alarm{
+    animation-name: flickering;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+@keyframes flickering{
+    0% {color: red;}
+    50% {color: rgba(0, 0, 0, 0);}
+    100% {color: red;}
+}
+
+.symbol{
+    display: inline-block;
+    width: 1ch;
+    text-align: center;
+}
