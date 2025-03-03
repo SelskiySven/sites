@@ -15,7 +15,7 @@
   },
   {
     "cityName": "Tokyo",
-    "temperatureCelsius": 11,
+    "temperatureCelsius": -11,
     "humidity": 0.45,
     "uvIndex": 2,
     "windSpeed": "20km"

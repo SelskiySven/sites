@@ -1,4 +1,4 @@
-body{
+body {
     padding: 0;
     margin: 0;
 }
@@ -7,28 +7,28 @@ body{
     display: flex;
 }
 
-#panels > span{
+#panels>span {
     width: 25%;
     height: 100vh;
 }
 
-#temperature-panel{
+#temperature-panel {
     background-color: aqua;
 }
 
-#humidity-panel{
+#humidity-panel {
     background-color: blueviolet;
 }
 
-#uvIndex-panel{
+#uvIndex-panel {
     background-color: chartreuse;
 }
 
-#windSpeed-panel{
+#windSpeed-panel {
     background-color: tomato;
 }
 
-#dropdown-search-panel{
+#dropdown-search-panel {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@ body{
     color: whitesmoke;
 }
 
-#dropdown-search{
+#dropdown-search {
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.4);
     border-radius: 16px;
@@ -50,23 +50,23 @@ body{
     transition: margin-top 0.4s ease-in-out;
 }
 
-#search-city{
+#search-city {
     padding: 5px 15px 5px;
     background: url('https://cdn-icons-png.flaticon.com/16/622/622669.png') no-repeat right 10px center;
-    background-size: 16px;  
+    background-size: 16px;
     outline: none;
     border-radius: 10px;
     border: 3px solid rgba(0, 0, 0, 0.5);
     transition: font-size 0.4s ease-in-out,
-                border 0.4s ease-in-out,
-                background-size 0.4s ease-in-out;
+        border 0.4s ease-in-out,
+        background-size 0.4s ease-in-out;
     cursor: pointer;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     color: whitesmoke;
 }
 
 #search-city:focus,
-#search-city:not(:placeholder-shown){
+#search-city:not(:placeholder-shown) {
     font-size: 3vw;
     border: 3px solid rgba(0, 0, 0, 0);
     cursor: text;
@@ -79,7 +79,7 @@ body{
 }
 
 
-#cities > button{
+#cities>button {
     font-size: 2vw;
     padding: 10px;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
@@ -92,11 +92,11 @@ body{
     border-radius: 16px;
 }
 
-.active{
+.active {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
-#panels > span{
+#panels>span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +106,7 @@ body{
 #humidity {
     width: 100%;
     aspect-ratio: 1/1;
-    clip-path: polygon( 84.646% 65.358%,84.646% 65.358%,84.192% 70.971%,82.877% 76.299%,80.773% 81.268%,77.952% 85.808%,74.486% 89.845%,70.448% 93.31%,65.908% 96.129%,60.939% 98.232%,55.613% 99.546%,50.001% 100%,50.001% 100%,44.39% 99.546%,39.064% 98.231%,34.095% 96.128%,29.555% 93.308%,25.516% 89.843%,22.05% 85.805%,19.23% 81.266%,17.126% 76.297%,15.811% 70.97%,15.356% 65.358%,15.356% 65.358%,16.039% 59.785%,17.913% 53.227%,20.717% 46%,24.189% 38.416%,28.069% 30.79%,32.094% 23.437%,36.004% 16.67%,39.537% 10.805%,42.431% 6.156%,44.425% 3.037%,44.425% 3.037%,44.818% 2.492%,45.259% 1.994%,45.744% 1.546%,46.268% 1.15%,46.828% 0.808%,47.419% 0.524%,48.037% 0.298%,48.677% 0.134%,49.335% 0.034%,50.007% 0%,50.007% 0%,50.678% 0.034%,51.336% 0.134%,51.976% 0.298%,52.594% 0.524%,53.184% 0.808%,53.744% 1.15%,54.269% 1.546%,54.754% 1.994%,55.195% 2.492%,55.588% 3.037%,55.588% 3.037%,57.58% 6.156%,60.472% 10.805%,64.002% 16.67%,67.911% 23.437%,71.935% 30.79%,75.814% 38.416%,79.286% 46%,82.09% 53.227%,83.964% 59.785%,84.646% 65.358% ); 
+    clip-path: polygon(84.646% 65.358%, 84.646% 65.358%, 84.192% 70.971%, 82.877% 76.299%, 80.773% 81.268%, 77.952% 85.808%, 74.486% 89.845%, 70.448% 93.31%, 65.908% 96.129%, 60.939% 98.232%, 55.613% 99.546%, 50.001% 100%, 50.001% 100%, 44.39% 99.546%, 39.064% 98.231%, 34.095% 96.128%, 29.555% 93.308%, 25.516% 89.843%, 22.05% 85.805%, 19.23% 81.266%, 17.126% 76.297%, 15.811% 70.97%, 15.356% 65.358%, 15.356% 65.358%, 16.039% 59.785%, 17.913% 53.227%, 20.717% 46%, 24.189% 38.416%, 28.069% 30.79%, 32.094% 23.437%, 36.004% 16.67%, 39.537% 10.805%, 42.431% 6.156%, 44.425% 3.037%, 44.425% 3.037%, 44.818% 2.492%, 45.259% 1.994%, 45.744% 1.546%, 46.268% 1.15%, 46.828% 0.808%, 47.419% 0.524%, 48.037% 0.298%, 48.677% 0.134%, 49.335% 0.034%, 50.007% 0%, 50.007% 0%, 50.678% 0.034%, 51.336% 0.134%, 51.976% 0.298%, 52.594% 0.524%, 53.184% 0.808%, 53.744% 1.15%, 54.269% 1.546%, 54.754% 1.994%, 55.195% 2.492%, 55.588% 3.037%, 55.588% 3.037%, 57.58% 6.156%, 60.472% 10.805%, 64.002% 16.67%, 67.911% 23.437%, 71.935% 30.79%, 75.814% 38.416%, 79.286% 46%, 82.09% 53.227%, 83.964% 59.785%, 84.646% 65.358%);
     background: lightgray;
     position: relative;
     overflow: hidden;
@@ -117,39 +117,98 @@ body{
     bottom: 0;
     width: 100%;
     height: 0;
-    background: blue;
+    background: rgb(51, 204, 255);
     transition: height 0.5s ease-in-out;
 }
 
-#uvIndex {
-    width: 80%;
-    aspect-ratio: 1/1;
-    clip-path: circle(50% at 50% 50%);
-    background: lightgray;
-    position: relative;
-    overflow: hidden;
-}
 
-#fill-uvIndex {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    background: yellow;
-    transition: height 0.5s ease-in-out;
-}
-
-#rotate{
+#rotate {
     transform-origin: center;
     animation-name: spin;
-    animation-duration: 0s;
+    animation-duration: 9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 
 }
 
 @keyframes spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
+#waves {
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    bottom: 0;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+#sun > path{
+    transition: fill 0.5s ease-in-out;
+    animation: pulse 2s ease-in-out infinite;
+    transform-origin: center center;
+}
+
+#temperature{
+    transform-origin: center 80%;
+    transform: scaleY(0);
+    transition: transform 0.5s ease-in-out, fill 0.5s ease-in-out;
+}
+
+#temperature-base{
+    transition: fill 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

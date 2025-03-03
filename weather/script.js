@@ -28,8 +28,24 @@ getJson("sample.json").then(data => {
                     console.log(city)
                     document.getElementById("city-" + c).classList.add("active")
                     document.getElementById("fill-humidity").style.height = `${city["humidity"]*100}%`
-                    document.getElementById("fill-uvIndex").style.height = `${city["uvIndex"]/20*100}%`
+                    document.getElementById("waves").style.bottom = `${city["humidity"]*100}%`
+                    document.getElementById("sun-outer").setAttribute("fill", `rgb(255, ${255*(1-city["uvIndex"]/20)}, ${255*city["uvIndex"]/20})`);
+                    document.getElementById("sun-inner").setAttribute("fill", `rgb(255, ${200*(1-city["uvIndex"]/20)}, ${255*city["uvIndex"]/20})`);
                     document.getElementById("rotate").style.animationDuration = `${20/Number(city["windSpeed"].replace("km",""))}s`
+                    document.getElementById("temperature").style.transform = `scaleY(${Math.abs(city["temperatureCelsius"])/30})`
+                    if (city["temperatureCelsius"]>0) {
+                        document.getElementById("temperature").style.fill = "#DA4453"
+                        document.getElementById("temperature-base").style.fill = "#DA4453"
+                    }
+                    else {
+                        document.getElementById("temperature").style.fill = "#0A26FF"
+                        document.getElementById("temperature-base").style.fill = "#0A26FF"
+                    }
+                    document.getElementById("search-city").value = ""
+                    document.getElementById("search-city").blur()
+                    cities.forEach(element => {
+                        document.getElementById("city-" + element).hidden = true
+                    });
                 }
             })
         }
